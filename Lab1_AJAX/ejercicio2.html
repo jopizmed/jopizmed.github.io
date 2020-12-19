@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UNIR - DAR - Laboratorio 1: Ejercicios en AJAX</title>
+    <link href="includes/estilos.css" rel="stylesheet">
+    <link href="includes/posicionamientos.css" rel="stylesheet">
+	<link href="includes/img/unir.png" rel="shortcut icon" type="image/png"/>
+	<script type="text/javascript" src="includes/js/ejercicio2.js"></script>
+</head>
+<body>
+    <header class="flex">
+        <div class="cabecera">
+            <div class="header flex vcentered ">
+                <img src="includes/img/logounir.png" style="height:50px">
+                <div class="title flex vcentered hcenter">Asignatura: Diseño de Aplicaciones en RED. Laboratorio 1
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <content class="flex column vcentered">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Enunciados</a></li>
+                    <li><a href="ejercicio1.html">Ejer 1-JS</a></li>
+                    <li><a class="active"  href="ejercicio2.html">Ejer 2-JS</a></li>
+                    <li><a href="ejercicio3.html">Ejer 3-JS</a></li>
+					<li><a href="ejercicio4.html">Ejer 4-JS</a></li>
+					<li><a href="index-ajax.html">Ejer AJAX</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contenido flex column vtop">
+            <div class="titulocontenido">
+                <p><h2>Ejercicio 2</h2></p>
+                <p>Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.</p>
+            </div>
+            <div class="ejercicio hcenter column">
+				<form action="#">
+					Número 1: <input type="number" id="num1" min="0" max="100" required/>
+					Número 2: <input type="number" id="num2" min="0" max="100" required/>
+					<button type="button" onclick="mayor((document.getElementById('num1').value),(document.getElementById('num2').value));">Buscar...</button>
+				</form>                
+            </div>
+        </div>
+    </content>
+
+
+    <footer class="pie">
+        <div class="pie-cnt">
+            <div class="flex row spbetween">
+                <div class="flex vcentered">Laboratorio #1: Tecnologías AJAX</div>
+                <div class="flex vcentered">José Pizarro Medina</div>
+            </div>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

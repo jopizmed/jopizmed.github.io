@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Ejercicio 1 - Estados de la petición AJAX</title>
+  <link rel="stylesheet" type="text/css" href="includes/style.css">
+  <script type="text/javascript" src="includes/js/code2.js"></script>
+</head>
+<body>
+    <header class="flex">
+        <div class="cabecera">
+            <div class="header flex vcentered ">
+                <img src="includes/img/logounir.png" style="height:50px">
+                <div class="title flex vcentered hcenter">Asignatura: Diseño de Aplicaciones en RED. Laboratorio 1
+                </div>
+						<h4><a href="index.html">Enunciados</a></h4>
+		<h4>____________________________________________________________________________________________________________________________</h4>
+            </div>
+        </div>
+    </header>
+
+  <form action="#">
+    URL:
+    <input type="text" id="recurso" size="70" />
+    <input type="button" id="enviar" value="Mostrar contenidos" onclick="loadDoc(document.getElementById('recurso').value);"/>
+  </form>
+
+  <div id="principal">
+    <h2>Contenidos del archivo:</h2>
+    <div id="contenidos"></div>
+
+    <h2>Cabeceras HTTP de la respuesta del servidor:</h2>
+    <div id="cabeceras"></div>
+  </div>
+
+  <div id="secundario">
+    <h2>Estados de la petición:</h2>
+    <div id="estados"></div>
+
+    <h2>Código de estado:</h2>
+    <div id="codigo"></div>
+  </div>
+
+	
+	<br>
+	
+	<div id="pie">
+		<h4>_________________________________________________________________________________________________________________________________________________</h4>
+		<p>Laboratorio #1: Tecnologías AJAX <br> José Pizarro Medina </p>
+		<br>
+	</div>
+	
+</body>
+</html>
